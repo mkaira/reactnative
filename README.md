@@ -240,3 +240,79 @@ If you have any questions or need help, please:
 ---
 
 Happy coding! 🎉
+
+
+ Folder Structure
+
+ root/
+│
+├── android/                  # Native Android project (auto-generated)
+├── ios/                      # Native iOS project (auto-generated)
+├── assets/                   # Static assets
+│   ├── fonts/
+│   ├── images/
+│   └── lottie/                # JSON animations if used
+│
+├── src/                       # Main app source code
+│   ├── api/                   # API calls & services
+│   │   ├── config.ts          # Base URL, API keys
+│   │   ├── axiosInstance.ts   # Axios setup with interceptors
+│   │   └── auth.service.ts    # Example API service
+│   │
+│   ├── components/            # Reusable components
+│   │   ├── ui/                # Buttons, Inputs, Modals
+│   │   ├── layout/            # Header, Footer, Drawer
+│   │   └── charts/            # Graphs, charts
+│   │
+│   ├── constants/             # Static values
+│   │   ├── colors.ts
+│   │   ├── fonts.ts
+│   │   └── strings.ts
+│   │
+│   ├── hooks/                 # Custom React hooks
+│   │   ├── useAuth.ts
+│   │   └── useNetwork.ts
+│   │
+│   ├── navigation/            # Navigation config
+│   │   ├── AppNavigator.tsx
+│   │   ├── AuthStack.tsx
+│   │   └── MainTabs.tsx
+│   │
+│   ├── redux/ (or store/)     # Redux, Zustand, Recoil store
+│   │   ├── slices/
+│   │   ├── actions.ts
+│   │   └── store.ts
+│   │
+│   ├── screens/               # App screens (group by feature)
+│   │   ├── auth/
+│   │   │   ├── LoginScreen.tsx
+│   │   │   └── RegisterScreen.tsx
+│   │   ├── home/
+│   │   │   ├── HomeScreen.tsx
+│   │   │   └── DashboardScreen.tsx
+│   │   └── profile/
+│   │       └── ProfileScreen.tsx
+│   │
+│   ├── services/              # Non-UI utilities (storage, analytics)
+│   │   ├── storage.service.ts
+│   │   ├── notification.service.ts
+│   │   └── analytics.service.ts
+│   │
+│   ├── theme/                 # Global theme & styles
+│   │   ├── light.ts
+│   │   ├── dark.ts
+│   │   └── index.ts
+│   │
+│   ├── utils/                  # Helper functions
+│   │   ├── formatDate.ts
+│   │   └── validateEmail.ts
+│   │
+│   ├── App.tsx                 # App entry point
+│   └── index.js                # Main bootstrap file
+│
+├── .env                        # Environment variables
+├── babel.config.js
+├── tsconfig.json               # TypeScript config
+├── package.json
+└── README.md
+
