@@ -132,7 +132,7 @@ You can use most Tailwind CSS classes including:
 
 ```
 my-app/
-├── App.tsx                 # Main app component
+├── App.tsx                # Main app component
 ├── index.ts               # App entry point
 ├── package.json           # Dependencies and scripts
 ├── babel.config.js        # Babel configuration
